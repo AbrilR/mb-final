@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b8fcb94291.js" crossorigin="anonymous"></script>
+    <!--Raleway-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <!--Finger Paint Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b8fcb94291.js" crossorigin="anonymous"></script>
+
+    <script defer src="./js/main.js"></script>
+    <title>Arcane</title>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top p-2">
+        <a href="index.html" class="navbar-brand">
+            <img src="./img/ArcaneTitle.png" alt="Arcane Logo"class="d-inline-lock align-top m-1">
+            <span class="hidden">Arcane</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center ms-auto text-white fs-5 fw-bold">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Parallax -->
+    <div class="parallax"></div>
+
+    <div class="container-fluid p-5">
+
+        <section class="text-center my-5">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h2>A House Divided</h2>
+                        <p>Two sisters. Two cities. One discovery that will change the world forever. Based on the world behind League of Legends, Arcane dives into the delicate balance between the rich, utopian city of Piltover and the seedy, oppressed underground of Zaun, unrest stirs as inventors and thieves, politicians and crime lords chafe against the constraints of a society torn asunder. As dissent reaches a fever pitch, two sisters steal an artifact of untold power. Discovery and danger intertwine as heroes are born and bonds are broken. Will this power change the world, or lead it to ruin? This is the world of Arcane. The story follows the origins of two iconic League champions-and the power that will tear them apart. Like the game on which it is based, Arcane is aimed at a "16+" audience and will deal with some more adult subject matter.</p>
+                    </div>
+                </div>
+        </section>
+        
+        <!-- Arcane Trailer -->
+        <section class="text-center my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Arcane: League of Legends</h2>
+                    <p>Arcane is an animated action-adventure streaming television series created by Christian Linke and Alex Yee. Produced by the French animation studio fortiche under the supervision of Riot Games and distributed by Netflix, it is set in Riot's League of Legends fictional universe, and primarily focuses on sister Vi and Jinx. Following the conclusion of the first season, Riot Games and Netflix announced that a second season was in production for a post-2022 release. Arcane's first season was released to critical acclaim, with praise directed at its animation, story, worldbuilding, action sequences, character, emotional weight, music and voice acting. Some have noted the series' appeal both to casual viewers who have never played League of Legends and to long-time fans of the game. It also set the record as Netflix's highest-rated series so far within a week of its premiere, ranked first on the Netflix top 10 Chart in 52 countries, and ranked second on the chart in the United States.</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe class="embed" src="https://www.youtube.com/embed/4Ps6nV4wiCE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- End Arcane Trailer -->
+    </div>
+    
+        <!-- Character Bio Carousel -->
+        <section class="hero carousel row justify-content-center">
+            <button class="arrow-left p-0" onclick="previousImage()"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="col-md-5 col-lg-4 carousel_img p-0">
+                <img id="img" src="" alt=""> 
+            </div>
+            <div class="col-md-5 col-lg-4 carousel_text text-center d-flex flex-column justify-content-center">
+                <h2 id="slidertitle"></h2>
+                <p id="slidertext"></p>
+            </div>
+            <button class="arrow-right p-0" onclick="changeImage()"><i class="fa-solid fa-arrow-right"></i></button>
+        </section>
+        <!-- End Character Bio Carousel--> 
+
+    <div class="container-fluid p-5">
+        <!-- Enemy Video -->
+        <section class="text-center my-5">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Enemy - Imagine Dragons & J.I.D</h2>
+                    <p>Of course, "Enemy" sees Dan Reynolds buoyantly delivers thought-provoking lyrics, but the song, which was written for the animated series League of Legends: Arcane, is also anchored by Grammy-nominated rapper J.I.D's verse, giving it a hip-hop vibe. “‘Enemy’ is about reconciling internal conflict in a world where it feels impossible to trust even yourself,” Reynolds explained. “In Arcane, two sisters' lives take them on different paths and leads to a division that threatens to tear an entire city apart. Like the series, the song is meant to be both personal and a critique of a society that seems intent on creating division.”</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe class="embed" src="https://www.youtube.com/embed/F5tSoaJ93ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- End Video -->
+
+        <!-- Favorite Scenes -->
+        <div class="text-center">
+            <h3>Favorite Scenes</h3>
+        </div>
+
+        <section class="text-center">
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6 col-lg-3 mt-5">
+                    <a href="https://www.youtube.com/watch?v=FXVtzYuSN7o&ab_channel=Deamon" target="_blank">
+                        <img src="IMG/JinxCaitlyn.png" alt="Jinx Caitlyn monkey drawing">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5">
+                    <a href="https://www.youtube.com/watch?v=Tz1THyAhx8E&ab_channel=Dray" target="_blank">
+                        <img src="IMG/PowderExplosion.png" alt="Jinx explosion fall">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5">
+                    <a href="https://www.youtube.com/watch?v=zP7AGWiw8Uw&ab_channel=LeagueofLegendshttps://www.youtube.com/watch?v=6M3LjMNCiZY&ab_channel=MalachiBloodII" target="_blank">
+                        <img src="IMG/JinxPunch.png" alt="Jinx punch">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-5">
+                    <a href="https://www.youtube.com/watch?v=6M3LjMNCiZY&ab_channel=MalachiBloodII" target="_blank">
+                        <img src="IMG/ZaunVi.png" alt="Vi looking over Zaun">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Favorite Scenes -->
+
+    </div>
+
+    <footer class="footer text-lg-start">
+        <div class="text-center p-3">
+            <a class="socials" href="https://www.discord.com/" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a class="socials" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a class="socials" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="socials" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a style="float:right" class="socials" href="#" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
